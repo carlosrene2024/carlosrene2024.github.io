@@ -1,0 +1,134 @@
+/* ESTILOS GLOBALES
+-------------------------------------------------- */
+/* Relleno debajo del pie de página y cuerpo de texto más claro */
+
+cuerpo {
+    parte inferior del relleno: 40px;
+    color: #5a5a5a;
+  }
+  
+  
+  /* PERSONALIZAR LA BARRA DE NAVBAR
+  -------------------------------------------------- */
+  
+  /* Clase especial en .container que rodea a .navbar, utilizada para colocarlo en su lugar. */
+  .navbar-envoltorio {
+    posición: absoluta;
+    superior: 0;
+    derecha: 0;
+    izquierda: 0;
+    índice z: 20;
+  }
+  
+  /* Da la vuelta al relleno para una visualización adecuada en ventanas estrechas */
+  .navbar-wrapper > .contenedor {
+    relleno derecho: 0;
+    relleno-izquierda: 0;
+  }
+  .navbar-envoltorio .navbar {
+    relleno derecho: 15px;
+    relleno-izquierda: 15px;
+  }
+  .navbar-envoltorio .navbar .container {
+    ancho: automático;
+  }
+  
+  
+  /* PERSONALIZAR EL CARRUSEL
+  -------------------------------------------------- */
+  
+  /* Clase base del carrusel */
+  .carrusel {
+    altura: 500px;
+    margen inferior: 60px;
+  }
+  /* Ya que posicionamos la imagen, necesitamos ayudar con el pie de foto */
+  .carrusel-caption {
+    índice z: 10;
+  }
+  
+  /* Declarar alturas debido al posicionamiento del elemento img */
+  .carrusel .elemento {
+    altura: 500px;
+    color de fondo: #777;
+  }
+  .carrusel-interior > .item > img {
+    posición: absoluta;
+    superior: 0;
+    izquierda: 0;
+    ancho mínimo: 100%;
+    altura: 500px;
+  }
+  
+  
+  /* CONTENIDO COMERCIAL
+  -------------------------------------------------- */
+  
+  /* Alinear al centro el texto dentro de las tres columnas debajo del carrusel */
+  .marketing .col-lg-4 {
+    margen inferior: 20px;
+    alineación de texto: centro;
+  }
+  .marketing h2 {
+    peso de fuente: normal;
+  }
+  .marketing .col-lg-4 p {
+    margen derecho: 10px;
+    margen izquierdo: 10px;
+  }
+  
+  
+  /* Largometrajes
+  ------------------------- */
+  
+  .featurette-divider {
+    margen: 80px 0; /* Espacia el Bootstrap <hr> más */
+  }
+  
+  /* Reducir los encabezados de marketing */
+  .featurette-heading {
+    peso de fuente: 300;
+    altura de línea: 1;
+    espaciado entre letras: -1px;
+  }
+  
+  
+  /* CSS RESPONSABLE
+  -------------------------------------------------- */
+  
+  @media (ancho mínimo: 768 px) {
+    /* Posicionamiento de la barra de navegación foo */
+    .navbar-envoltorio {
+      margen superior: 20px;
+    }
+    .navbar-wrapper .contenedor {
+      relleno derecho: 15px;
+      relleno-izquierda: 15px;
+    }
+    .navbar-envoltorio .navbar {
+      relleno derecho: 0;
+      relleno-izquierda: 0;
+    }
+  
+    /* La barra de navegación se separa de la parte superior, así que redondeamos las esquinas */
+    .navbar-envoltorio .navbar {
+      borde-radio: 4px;
+    }
+  
+    /* aumentar el tamaño del contenido del carrusel */
+    .carrusel-caption p {
+      margen inferior: 20px;
+      tamaño de fuente: 21px;
+      altura de línea: 1,4;
+    }
+  
+    .featurette-heading {
+      tamaño de fuente: 50px;
+    }
+  }
+  
+  @media (ancho mínimo: 992 px) {
+    .featurette-heading {
+      margen superior: 120px;
+    }
+  }
